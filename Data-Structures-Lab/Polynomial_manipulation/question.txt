@@ -1,0 +1,52 @@
+
+Exercise 1: Polynomial manipulation using Linked List
+
+Create a PolynomialADTwith the following fields
+
+ Coefficient, Exponent and a pointer to the next node
+
+PolynomialADT has the implementations for the following operations to
+1.	Create a polynomial through insertion at the end
+void insertEnd(structpolyADT *p,intcoeff, intexp)
+2.	Add two polynomials
+polyADTpolyAdd(structpolyADT *p1, structpolyADT *p2)
+3.	Multiply two polynomials 
+structpolyADT*polyMul(structpolyADT *p1, structpolyADT *p2)
+4.	Simplifying the polynomial – Combining like terms
+polyADTpolySimplify(structpolyADT  *p)
+5.	Find the degree of polynomial
+void polyDegree(structpolyADT*p)
+6.	Evaluate a polynomial 
+intpolyEvaluate(structpolyADT  *p)
+
+In order to implement Polynomial Manipulation,
+•	It is necessary to create a file that has polyADT and implementation of above-mentioned functions
+•	Another file will be created to write the Polynomial manipulation using the polyADT
+
+Add the following validations
+
+During addition, if one of the polynomial is zero polynomial, what will be the result?
+During multiplication, if one of the polynomial is zero polynomial, what will be the result?
+
+Test cases
+1.	Creation
+	1stPolymomial: 5x2+4x+2
+	2nd Polynomial: -5x-5
+2.	Addition
+	1stNumber: 5x2+4x+2
+	2ndNumber: -5x-5
+	Resultant polynomial: 5x2-x-3
+3.	Multiplication
+	1stPolymomial: 5x2+4x+2
+	2nd Polynomial: -5x-5
+	Resultant polynomial: -25x3-20x2-10x-25x2-20x-10
+4.	Simplifiying the polynomial
+-25x3-45x2-30x-10
+5.	Degree of polynomial
+   Input:  25x3-45x2-30x-10
+  Degree - 3
+6.	Evaluation of polynomial
+-25x3-45x2-30x-10
+
+  X value is 2 
+  Value is -450
